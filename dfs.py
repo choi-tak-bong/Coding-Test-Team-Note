@@ -1,3 +1,7 @@
+"""
+깊이 우선 탐색. 최대한 멀리 있는 노드를 우선으로 탐색하는 방식. 스택 자료구조 이용.
+"""
+
 def dfs(graph, v, visited):
     visited[v] = True
     print(v, end=" ")
