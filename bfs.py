@@ -1,3 +1,7 @@
+"""
+너비 우선 탐색. 가까운 노드부터 탐색하는 방식. 선입선출 방식의 큐를 이용.
+"""
+
 from collections import deque
 
 def bfs(graph, start, visited):
