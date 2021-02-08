@@ -52,4 +52,5 @@ def KMP_search(pat: str, txt: str):
             result.append(i - j)
             # 이전 인덱스의 lps값을 참조하여 계속 검색
             j = lps[j - 1]
+            
     return result
