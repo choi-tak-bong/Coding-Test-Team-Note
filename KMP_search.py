@@ -24,9 +24,10 @@ def compute_LPS(pat: str):
     
     return lps
 
-def KPM_search(pat: str, txt: str):
+def KMP_search(pat: str, txt: str):
     m = len(pat)
     n = len(txt)
+    result = []
 
     lps = compute_LPS(pat)
 
@@ -48,6 +49,7 @@ def KPM_search(pat: str, txt: str):
                 i += 1
         # Pattern을 찾은 경우
         if j == m:
-            print(i - j)
+            result.append(i - j)
             # 이전 인덱스의 lps값을 참조하여 계속 검색
             j = lps[j - 1]
+    return result
