@@ -54,3 +54,9 @@ def KMP_search(pat: str, txt: str):
             j = lps[j - 1]
             
     return result
+
+"""
+txt = 'ABXABABXAB'
+pat = 'ABXAB'
+print(KMP_search(pat, txt))
+"""
